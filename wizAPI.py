@@ -365,7 +365,7 @@ class Client:
                 card_pos = self._spell_memory["unusable"][0]
             except (KeyError, IndexError):
                 result = self.find_unusable_spells(limit=1)
-                if len(result) is not 0:
+                if len(result) != 0:
                     card_pos = result[0]
                 else:
                     break
